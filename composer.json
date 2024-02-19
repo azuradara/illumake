@@ -1,5 +1,17 @@
 {
-    "name": "azuradara/illuminate-make",
+    "description": "A (mostly) typesafe Laravel container resolver.",
+    "keywords": [
+        "laravel",
+        "make",
+        "illuminate",
+        "typesafe"
+    ],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/azuradara/illumake/issues",
+        "source": "https://github.com/azuradara/illumake"
+    },
+    "name": "azuradara/illumake",
     "autoload": {
         "files": [
             "helpers.php"
@@ -16,5 +28,7 @@
             "name": "Aymane Hlamnach",
             "email": "hello@azuradara.dev"
         }
-    ]
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

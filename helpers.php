@@ -1,8 +1,5 @@
 <?php
 
-use Illuminate\Container\Container;
-use Illuminate\Contracts\Container\BindingResolutionException;
-
 if (!function_exists('make')) {
     /**
      * @template TClass
@@ -10,10 +7,10 @@ if (!function_exists('make')) {
      * @param class-string<TClass> $abstract
      *
      * @return TClass
-     * @throws BindingResolutionException
+     * @throws \Illuminate\Contracts\Container\BindingResolutionException
      */
     function make(string $abstract, array $parameters = [])
     {
-        return Container::getInstance()->make($abstract, $parameters);
+        return \Illuminate\Container\Container::getInstance()->make($abstract, $parameters);
     }
 }
