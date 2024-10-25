@@ -7,7 +7,6 @@ if (!function_exists('make')) {
      * @param class-string<TClass> $abstract
      *
      * @return TClass
-     * @throws \Illuminate\Contracts\Container\BindingResolutionException
      */
     function make(string $abstract, array $parameters = [])
     {
